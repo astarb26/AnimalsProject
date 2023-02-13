@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796616934956",
+    "project_id": "hitprojectanimal",
+    "storage_bucket": "hitprojectanimal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796616934956:android:074fb55481e00c4a99f389",
+        "android_client_info": {
+          "package_name": "com.example.hitprojectanimals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796616934956-79tt74kk7fbla5q4rb3k2s0ja8e3stcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZOvCXDbhjYUQW3BM3gfgCWTe5sjTE1VM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796616934956-79tt74kk7fbla5q4rb3k2s0ja8e3stcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

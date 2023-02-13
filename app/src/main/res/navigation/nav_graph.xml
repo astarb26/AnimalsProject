@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.hitprojectanimals.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_regFragment"
+            app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_blankFragmentHeb"
+            app:destination="@id/blankFragmentHeb" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.hitprojectanimals.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_regUserFragment"
+            app:destination="@id/regUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regFragment"
+        android:name="com.example.hitprojectanimals.RegFragment"
+        android:label="fragment_reg"
+        tools:layout="@layout/fragment_reg" >
+        <action
+            android:id="@+id/action_regFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.hitprojectanimals.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/regUserFragment"
+        android:name="com.example.hitprojectanimals.RegUserFragment"
+        android:label="RegUserFragment" />
+    <fragment
+        android:id="@+id/blankFragmentHeb"
+        android:name="com.example.hitprojectanimals.BlankFragmentHeb"
+        android:label="fragment_blank_heb"
+        tools:layout="@layout/fragment_blank_heb" >
+        <action
+            android:id="@+id/action_blankFragmentHeb_to_blankFragmentHebTwo"
+            app:destination="@id/blankFragmentHebTwo" />
+        <action
+            android:id="@+id/action_blankFragmentHeb_to_blankFragmentEn"
+            app:destination="@id/blankFragmentEn" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentHebTwo"
+        android:name="com.example.hitprojectanimals.BlankFragmentHebTwo"
+        android:label="fragment_blank_heb_two"
+        tools:layout="@layout/fragment_blank_heb_two" />
+    <fragment
+        android:id="@+id/blankFragmentEnTwo"
+        android:name="com.example.hitprojectanimals.BlankFragmentEnTwo"
+        android:label="fragment_blank_en_two"
+        tools:layout="@layout/fragment_blank_en_two" />
+    <fragment
+        android:id="@+id/blankFragmentEn"
+        android:name="com.example.hitprojectanimals.BlankFragmentEn"
+        android:label="fragment_blank_en"
+        tools:layout="@layout/fragment_blank_en" >
+        <action
+            android:id="@+id/action_blankFragmentEn_to_blankFragmentHeb"
+            app:destination="@id/blankFragmentHeb" />
+        <action
+            android:id="@+id/action_blankFragmentEn_to_blankFragmentEnTwo"
+            app:destination="@id/blankFragmentEnTwo" />
+    </fragment>
+</navigation>
